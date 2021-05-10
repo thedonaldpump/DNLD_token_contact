@@ -6,9 +6,9 @@ import './IBEP20.sol';
 contract Token is IBEP20 {
   
     // common addresses
-    address public owner;
-    address public developmentPot;
-    address public foundersPot;
+    address private owner;
+    address private developmentPot;
+    address private foundersPot;
     
     // token liquidity metadata
     uint public override totalSupply;
